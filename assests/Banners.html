@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>How to Make Custom Banners</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system,".sfnstext-regular",san francisco,roboto,segoe ui,helvetica neue,lucida grande,Arial,microsoft yahei,微软雅黑,STXihei,华文细黑,sans-serif;
+            line-height: 1.5;
+            font-size: 22px;
+            background-color:#2E3440;
+            color:#D8DEE9;
+            margin-bottom: 60;
+        }
+        code {
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+            padding-left: 2px;
+            padding-right: 2px;
+            font-size: .75em;
+            background: #272c36;
+            border: 1px solid #585d66;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(0,0,0,.125);
+        }
+        h1 h2 h3 h4 h5 h6 {
+            margin: 2em 0 .5em;
+            line-height: 1.2;
+            font-family: -apple-system,".sfnstext-regular",san francisco,roboto,segoe ui,helvetica neue,lucida grande,Arial,microsoft yahei,微软雅黑,STXihei,华文细黑,sans-serif;
+            font-weight: 700;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.563em;
+        }  
+        p {
+            font-size: .85em;
+        }
+        hr {
+            display: block;
+            margin: 1em 0;
+            border: 0;
+            border-top: 1px solid #585d66;
+        }
+        h4 {
+            font-size: 1.33;
+        }
+        h5 {
+            display: block;
+            font-size: 0.83em;
+            margin-block-start: 1.67em;
+            margin-block-end: 1.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        div {
+            margin: 44px, 35px, 0px;
+        }
+        #main {
+            clear: both;
+            margin-left: auto;
+            margin-top: 2em;
+            margin-right: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+            -webkit-animation: intro .3s both;
+            animation: intro .3s both;
+            max-width: 100%;
+            -webkit-animation-delay: .35s;
+            animation-delay: .35s;
+            max-width: 1280px;
+        }
+        .topnav {
+        overflow: hidden;
+        padding: 22px 0px 0px 22px;
+    
+        }
+        .topnav a {
+        float: left;
+        text-align: center;
+        margin: 0px 22px 0px 0px;
+        padding: 11px 44px;
+        text-decoration: none;
+        color: #d8dee9;
+        }
+        .topnav a:hover {
+        color: #ADB2BA;
+        }
+        .topnav a.active {
+        color: white;
+        }
+        .bottom-nav {
+        overflow: hidden;
+        background-color: #20242D;
+        margin-top: 66px;
+        padding: 22px;
+        }
+        .bottom-nav p{
+        float: left;
+        text-align: center;
+        margin: 0px 22px 0px 0px;
+        padding: 33px 44px 33px 22px;
+        font-size: 15.125px;
+        text-decoration: none;
+        color: #d8dee9;
+        }
+        .bottom-nav a:hover {
+        color: #ADB2BA;
+        }
+        .bottom-nav a.active {
+        color: white;
+        }
+        ul {
+            list-style: disc;
+        }
+        li {
+            padding: 3px;
+        }
+        .notice {
+            margin: 2em 0!important;
+            padding: 1em;
+            font-family: -apple-system,".sfnstext-regular",san francisco,roboto,segoe ui,helvetica neue,lucida grande,Arial,microsoft yahei,微软雅黑,STXihei,华文细黑,sans-serif;
+            font-size: .75em!important;
+            text-indent: initial;
+            font-weight: 700;
+            background-color: #7d8289;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(189,193,196,.25);
+        }
+        .notice--warning {
+            margin: 2em 0!important;
+            padding: 1em;
+            font-family: -apple-system,".sfnstext-regular",san francisco,roboto,segoe ui,helvetica neue,lucida grande,Arial,microsoft yahei,微软雅黑,STXihei,华文细黑,sans-serif;
+            font-size: .75em!important;
+            text-indent: initial;
+            font-weight: 700;
+            background-color: #87625a;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(208,135,112,.25);
+        }
+        .notice--info {
+            margin: 2em 0!important;
+            padding: 1em;
+            font-family: -apple-system,".sfnstext-regular",san francisco,roboto,segoe ui,helvetica neue,lucida grande,Arial,microsoft yahei,微软雅黑,STXihei,华文细黑,sans-serif;
+            font-size: .75em!important;
+            text-indent: initial;
+            font-weight: 700;
+            background-color: #485e7b;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(94,129,172,.25);
+        }
+        img{
+            padding: 10px 0px;
+        }
+        .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        .normal {
+            font-size: 18.7px;
+        }
+    </style>
+    <body link="#B8D2DF" alink="#acbcc7" vlink="#8A9EA7">
+        <div class="topnav">
+            <a href="Home.html"><strong>Wii Stuff</strong></a>
+        </div>
+        <hr>
+        <div id="main">
+            <h1>Custom Wii Banners for USB Loader GX</h1>
+            <hr>
+            <div class="normal">This is a guide on how I was able to make custom banners for use in <a href="https://wii.guide/usbloadergx">USB Loader GX</a>. While it may not be the best way to do it, it is the one that I found to work. If you happened to have found a better method, ping me on <a href="https://discord.gg/rc24">the RiiConnect24 Discord server</a>, my tag is Snare-Hawk#6331.</div>
+            <h4>What you need</h4>
+            <ul>
+                <li><a href="https://code.google.com/archive/p/customizemii/downloads">CustomizeMii</a></li>
+                <li>An base WAD such as <a href="https://cdn.discordapp.com/attachments/666436193898201109/950131110770278460/Animal_Crossing_-_fart_-_opGAF.wad">this Animal Crossing one</a></li>
+                <li>An image editing software such as <a href="https://www.gimp.org/">GIMP</a></li>
+            </ul>
+            <h4>Optional</h4>
+            <ul>
+                <li>An audio editing software such as <a href="http://www.darkaudacity.com/download.html">Dark Audacity</a></li>
+            </ul>
+            <h4>Instructions</h4>
+            <ol>
+                <li>Find or create a fitting image that you want to use as the banner art.</li>
+                    <ul>
+                        <li>For a good banner, I recommend just putting the game's logo on top of the title's art in your editing software.</li>
+                        <li>For best results, ensure the image's aspect ratio is 16:9.</li>
+                    </ul>
+                <li>Compress the image as much as you can.</li>
+                    <ul>
+                        <li>I've noticed that the larger the WAD is in size, the longer it takes to load in your loader.</li>
+                        <li>I recommend using <a href="https://tinypng.com">TinyPNG</a>.</li>
+                    </ul>
+                <li>Launch CustomizeMii and open your base WAD.</li>
+                <li>Select the "Banner" tab and then select "MenuScreen.tpl". Then select "Replace" and choose the image you want the banner to have.</li>
+                <ul>
+                    <li>If you want to add your own music, select the "Options" tab, select "Browse" under "New Sound" and then "Load Audio File".</li>
+                    <li>Your audio file must be in .wav format and for best results, it should also have only one audio channel and be under at 15 seconds.</li>
+                </ul>
+                <li>Select "Create WAD" and save your WAD to your desired location.</li>
+                <li>Open your new WAD in CustomizeMii and select the "Options" tab, select "Extract..." and then "WAD Contents". This will extract the WAD's content to a folder to your desired location.</li>
+                <li>Locate the folder containing the WAD contents and then rename the file named <code>00000000.app</code> to <code>[GAME ID].bnr</code>.</li>
+            </ol>
+        </div>
+        <div class="bottom-nav">
+            <p>Site by <a href="https://snare-hawk.carrd.co/">Snare-Hawk</a></p>
+        </div>
+        </body>
+        </html>
