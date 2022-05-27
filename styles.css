@@ -86,14 +86,23 @@ div {
 .topnav a:hover {
 	color: #adb2ba;
 }
-.topnav a.active {
+.topnav a:active {
 	color: white;
+}
+.topnav a:visited {
+	color: inherit;
 }
 .bottom-nav {
 	overflow: hidden;
 	background-color: #20242d;
 	margin-top: 66px;
 	padding: 22px;
+}
+body#home div.bottom-nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 97.7%;
 }
 .bottom-nav p {
 	float: left;
@@ -156,11 +165,37 @@ li {
 	box-shadow: 0 1px 1px rgba(94, 129, 172, 0.25);
 }
 img {
-	padding: 10px 0px;
+	display: block;
+	margin: 10px auto;
 }
-.img {
-	margin: auto;
+#emuNAND img {
+	width: 796px;
+	height: 557px;
 }
-.normal {
+img .normal {
 	font-size: 18.7px;
+}
+a {
+	color: #b8d2df;
+}
+a:active {
+	color: #acbcc7;
+}
+a:visited {
+	color: #8a9ea7;
+}
+.notice--warning a {
+	color: #deab9b;
+	text-decoration: none;
+}
+.notice--info a {
+	color: #8ea7c5;
+	text-decoration: none;
+}
+.notice--warning a:hover,
+.notice--info a:hover {
+	text-decoration: underline;
+}
+.topnav a {
+	text-decoration: bold;
 }

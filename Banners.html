@@ -3,8 +3,9 @@
 	<head>
 		<title>How to Make Custom Banners</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 	</head>
-	<body link="#B8D2DF" alink="#acbcc7" vlink="#8A9EA7">
+	<body id="banners">
 		<div class="topnav">
 			<a href="index.html"><strong>Wii Stuff</strong></a>
 		</div>
@@ -16,33 +17,32 @@
 				This is a guide on how I was able to make custom banners for use in
 				<a href="https://wii.guide/usbloadergx">USB Loader GX</a>. While it may
 				not be the best way to do it, it is the one that I found to work. If you
-				happened to have found a better method, ping me on
-				<a href="https://discord.gg/rc24">the RiiConnect24 Discord server</a>,
-				my tag is Snare-Hawk#6331.
+				happened to have found a better method, ping me on the
+				<a href="https://discord.gg/rc24">RiiConnect24 Discord server</a>, my
+				username is Snare-Hawk#6331.
 			</div>
 			<h4>What you need</h4>
 			<ul>
 				<li>
-					<a href="https://code.google.com/archive/p/customizemii/downloads"
-						>CustomizeMii</a
-					>
+					<a href="https://code.google.com/archive/p/customizemii/downloads">
+						CustomizeMii
+					</a>
 				</li>
 				<li>
-					A base WAD such as
-					<a
-						href="https://cdn.discordapp.com/attachments/666436193898201109/950131110770278460/Animal_Crossing_-_fart_-_opGAF.wad"
-						>this Animal Crossing one</a
-					>
+					A WAD to use as a base, such as
+					<a href="assets/Animal Crossing Banner.wad">
+						this Animal Crossing one
+					</a>
 				</li>
 				<li>
-					An image editing software such as
+					An image editing software, such as
 					<a href="https://www.gimp.org/">GIMP</a>
 				</li>
 			</ul>
 			<h4>Optional</h4>
 			<ul>
 				<li>
-					An audio editing software such as
+					An audio editing software, such as
 					<a href="http://www.darkaudacity.com/download.html">Dark Audacity</a>
 				</li>
 			</ul>
@@ -62,7 +62,7 @@
 				<ul>
 					<li>
 						I've noticed that the larger the WAD is in size, the longer it takes
-						to load in your loader.
+						to load in your USB loader.
 					</li>
 					<li>I recommend using <a href="https://tinypng.com">TinyPNG</a>.</li>
 				</ul>
@@ -90,8 +90,19 @@
 				<li>
 					Locate the folder containing the WAD contents and then rename the file
 					named <code>00000000.app</code> to <code>[GAME ID].bnr</code>.
+					<ul>
+						<li>
+							You only need to have the first three characters of the game ID
+							for USB Loader GX to read it properly.
+						</li>
+					</ul>
 				</li>
 			</ol>
+			<p>
+				You should now see the banners you created with their respective title.
+				If you would like to see the banners I have made, check them out
+				<a href="assets/cache_bnr.7z">here</a>.
+			</p>
 		</div>
 		<div class="bottom-nav">
 			<p>Site by <a href="https://snare-hawk.carrd.co/">Snare-Hawk</a></p>
