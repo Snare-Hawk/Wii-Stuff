@@ -87,7 +87,7 @@ div {
 	color: #adb2ba;
 }
 .topnav a:active {
-	color: white;
+	color: #ffffff;
 }
 .topnav a:visited {
 	color: inherit;
@@ -113,11 +113,12 @@ body#home div.bottom-nav {
 	text-decoration: none;
 	color: #d8dee9;
 }
-.bottom-nav a:hover {
-	color: #adb2ba;
+.bottom-nav a {
+	color: inherit !important;
+	text-decoration: none;
 }
-.bottom-nav a.active {
-	color: white;
+.bottom-nav a:hover {
+	text-decoration: underline;
 }
 ul {
 	list-style: disc;
